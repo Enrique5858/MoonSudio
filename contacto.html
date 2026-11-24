@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Moon Studio, marca personal de Enrique Patiño. Fotografía, diseño gráfico, identidad visual y producción audiovisual.">
+        <title>
+            Contacto | Moon Studio
+        </title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&amp;family=Poppins:wght@400;500;600;700;800&amp;display=swap">
+        <link rel="stylesheet" href="elementos.css">
+    </head>
+    <body>
+        <a class="saltar" href="#contenido">
+            Saltar al contenido
+        </a>
+        <!-- Encabezado y navegación compartidos -->
+        <header class="encabezado">
+            <a class="marca" href="index.html" aria-label="Moon Studio, inicio">
+                <img src="imagenes/Logo Moon/Moon_Studio_Sin_Fondo_Blanco.png" alt="Moon Studio">
+            </a>
+            <nav class="menu" aria-label="Menú principal">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="portafolio.html">
+                            Portafolio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="conocenos.html">
+                            Conócenos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contacto.html" aria-current="page">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main id="contenido">
+            <section class="introduccion">
+                <p class="etiqueta">
+                    CONVERSEMOS
+                </p>
+                <h1>
+                    Tu próxima idea
+                    <br>
+                    <span>
+                        empieza aquí.
+                    </span>
+                </h1>
+                <p class="entradilla">
+                    Cuéntanos qué quieres comunicar. Fotografía, identidad visual, diseño o un proyecto audiovisual.
+                </p>
+            </section>
+            <section class="dos-columnas">
+                <div>
+                    <h2>
+                        Contacto con Moon Studio
+                    </h2>
+                    <p>
+                        Enrique Patiño
+                        <br>
+                        Dirección General / Fundador
+                    </p>
+                    <p>
+                        Los enlaces de correo, Instagram y WhatsApp se añadirán cuando se confirmen los datos del estudio.
+                    </p>
+                    <div class="tabla-contenedor">
+                        <table>
+                            <caption>
+                                Encuentra el área de tu proyecto
+                            </caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        Área
+                                    </th>
+                                    <th scope="col">
+                                        Trabajos
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Fotografía
+                                    </td>
+                                    <td>
+                                        Productos, eventos y retratos
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Diseño gráfico
+                                    </td>
+                                    <td>
+                                        Trípticos, afiches y portadas
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Identidad visual
+                                    </td>
+                                    <td>
+                                        Logotipos y aplicaciones de marca
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Audiovisual
+                                    </td>
+                                    <td>
+                                        Metrajes y videos promocionales
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Formulario académico: no existe todavía un servicio de recepción -->
+                <form id="formulario-contacto" class="formulario" action="contacto.html#aviso-formulario" method="get">
+                    <h2>
+                        Cuéntanos tu proyecto
+                    </h2>
+                    <p class="nota" id="aviso-formulario" role="note">
+                        Puedes completar los campos para probar el formulario. El envío de mensajes todavía no está disponible.
+                    </p>
+                    <fieldset>
+                        <legend>
+                            Tus datos
+                        </legend>
+                        <label for="nombre">
+                            Nombre completo
+                        </label>
+                        <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+                        <label for="correo">
+                            Correo electrónico
+                        </label>
+                        <input type="email" id="correo" name="correo" autocomplete="email" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            Tu idea
+                        </legend>
+                        <label for="servicio">
+                            Área de interés
+                        </label>
+                        <select id="servicio" name="servicio">
+                            <option value="">
+                                Selecciona un área
+                            </option>
+                            <option>
+                                Fotografía de productos
+                            </option>
+                            <option>
+                                Fotografía de eventos
+                            </option>
+                            <option>
+                                Retratos
+                            </option>
+                            <option>
+                                Diseño gráfico
+                            </option>
+                            <option>
+                                Logotipos e identidad visual
+                            </option>
+                            <option>
+                                Producción audiovisual
+                            </option>
+                        </select>
+                        <label for="mensaje">
+                            Descripción del proyecto
+                        </label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </fieldset>
+                    <button class="boton" type="submit" disabled>
+                        Envío aún no disponible
+                    </button>
+                </form>
+            </section>
+        </main>
+        <!-- Pie de página -->
+        <footer class="pie">
+            <div>
+                <a class="marca-pie" href="index.html">
+                    MOON STUDIO
+                    <span>
+                        Tu historia. Nuestra mirada. Un impacto.
+                    </span>
+                </a>
+                <a href="contacto.html">
+                    Conversemos sobre tu idea ↗
+                </a>
+            </div>
+            <p>
+                © 2026 Moon Studio · Enrique Patiño · Portafolio de marca personal
+            </p>
+        </footer>
+        <!-- Burbuja de contacto fija en la esquina inferior derecha -->
+        <a class="flotante" href="#formulario-contacto">Háblanos ↗</a>
+    </body>
+</html>
+
+
